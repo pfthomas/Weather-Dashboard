@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="jumbotron jumbotron-fluid p-1 text-center" style = "background-color: blue; color: white;">
+  <div class="container">
+    <h1 class="display-4">Weather Dashboard</h1>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class = "col-sm-3">
+            <h4 class = "pt-1"> Search for a City: </h4>
+
+         <div class = "input-group">
+                <input type ="text" class = "form-control" id="city-search" >
+             <div class="input-group-append">
+                  <button class="btn btn-primary text-light" id="search-btn">Search</button>
+             </div>
+        </div>
+                <ul class="list-group">
+
+                </ul>
+        </div>
+    
+      <div class="col-sm-9">
+            <div class="row border">
+             <div class="col-sm-12" id="current-weather">
+                  <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                  <p>Temperature: <span class="current" id="temp"></span></p>
+                  <p>Wind: <span class="current" id="wind-speed"></span></p>
+                  <p>Humidity: <span class="current" id="humidity"></span></p>
+                  <p>UV index: <span class="current py-2 px-2" id="uv-index"></span></p>
+              </div>
+
+          </div>
+
+           <div class="col-sm-12" id ="future-weather">
+                <h3>5-Day Forecast:</h3>
+                <div class="row text-light">
+                    <div class="col-sm-2 bg-primary text-white ml-1">
+                        <p id="forecastDate0"></p>
+                        <p id="forecastImage0"></p>
+                        <p>Temp: <span id="forecastTemp0"></span></p>
+                        <p>Wind: <span id="forecastWind4"></span></p>
+                        <p>Humidity: <span id="forecastHumidity0"></span></p>
+                    </div>
+                    <div class="col-sm-2 bg-primary text-white ml-1">
+                        <p id="forecastDate1"></p>
+                        <p id="forecastImage1"></p>
+                        <p>Temp: <span id="forecastTemp1"></span></p>
+                        <p>Wind: <span id="forecastWind1"></span></p>
+                        <p>Humidity: <span id="forecastHumidity1"></span></p>
+                    </div>
+                    <div class="col-sm-2 bg-primary text-white ml-1">
+                        <p id="forecastDate2"></p>
+                        <p id="forecastImage2"></p>
+                        <p>Temp: <span id="forecastTemp2"></span></p>
+                        <p>Wind: <span id="forecastWind2"></span></p>
+                        <p>Humidity: <span id="forecastHumidity2"></span></p>
+                    </div>
+                    <div class="col-sm-2 bg-primary text-white ml-1">
+                        <p id="forecastDate3"></p>
+                        <p id="forecastImage3"></p>
+                        <p>Temp: <span id="forecastTemp3"></span></p>
+                        <p>Wind: <span id="forecastWind3"></span></p>
+                        <p>Humidity: <span id="forecastHumidity3"></span></p>
+                    </div>
+                    <div class="col-sm-2 bg-primary text-white ml-1">
+                        <p id="forecastDate4"></p>
+                        <p id="forecastImage4"></p>
+                        <p>Temp: <span id="forecastTemp4"></span></p>
+                        <p>Wind: <span id="forecastWind4"></span></p>
+                        <p>Humidity: <span id="forecastHumidity4"></span></p>
+                    </div>
+                </div>
+
+
+         </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src = "script.js"></script>
+
+</body>
+</html>
